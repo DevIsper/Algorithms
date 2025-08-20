@@ -1,4 +1,6 @@
-package spring.GR.model;
+package spring.GR.datastructures;
+
+import spring.GR.model.LinkedNode;
 
 public class Stack<T> {
     private LinkedNode<T> top;
