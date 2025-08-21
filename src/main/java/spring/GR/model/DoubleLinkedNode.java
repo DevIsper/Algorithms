@@ -1,38 +1,38 @@
 package spring.GR.model;
 
-public class DoubleLinkedNode {
+public class DoubleLinkedNode<T> {
 
-    private Object info;
-    private DoubleLinkedNode previous;
-    private DoubleLinkedNode next;
+    private T info;
+    private DoubleLinkedNode<T> previous;
+    private DoubleLinkedNode<T> next;
 
-    public DoubleLinkedNode(Object info, DoubleLinkedNode previous, DoubleLinkedNode next) {
+    public DoubleLinkedNode(T info, DoubleLinkedNode<T> previous, DoubleLinkedNode<T> next) {
         this.info = info;
         this.previous = previous;
         this.next = next;
     }
 
-    public Object getInfo() {
+    public T getInfo() {
         return info;
     }
 
-    public void setInfo(Object info) {
+    public void setInfo(T info) {
         this.info = info;
     }
 
-    public DoubleLinkedNode getPrevious() {
+    public DoubleLinkedNode<T> getPrevious() {
         return previous;
     }
 
-    public void setPrevious(DoubleLinkedNode previous) {
+    public void setPrevious(DoubleLinkedNode<T> previous) {
         this.previous = previous;
     }
 
-    public DoubleLinkedNode getNext() {
+    public DoubleLinkedNode<T> getNext() {
         return next;
     }
 
-    public void setNext(DoubleLinkedNode next) {
+    public void setNext(DoubleLinkedNode<T> next) {
         this.next = next;
     }
 }
